@@ -1,0 +1,45 @@
+{
+  "name": "codation",
+  "version": "1.0.0",
+  "description": "Application builder from simple yaml configuration files",
+  "main": "dist/index.js",
+  "repository": "git@github.com:jdgriffith/codation.git",
+  "author": "Justin Griffith <justin.dean.griffith@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+    "prebuild": "rimraf dist",
+    "build": "",
+    "console:dev": "ts-node src/main.ts"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^7.0.0",
+    "@nestjs/common": "^7.0.0",
+    "@nestjs/core": "^7.0.0",
+    "@nestjs/schematics": "^7.0.0",
+    "@nestjs/testing": "^7.0.0",
+    "@types/node": "^14.0.14",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.6",
+    "yaml": "^1.10.0"
+  },
+  "husky": {
+    "hooks": {}
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.3"
+  }
+}
